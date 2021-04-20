@@ -164,12 +164,9 @@ htmlHead = """
 <h1 class="grhead1">Main Table of Contents</h1>
 <div id="tableOfContents" class="grid-toc">
     <div class="toc1">
-        <h2 class="grhead2"><a href="houses.html">Housing</a></h3>
-        <h2 class="grhead2"><a href="3-master_merchant.html">Master Merchant</a></h3>
+        <h2 class="grhead2"><a href="decks.html">Decks</a></h3>
     </div>
     <div class="toc2">
-        <h2 class="grhead2"><a href="1-install_luarocks.html">Installing LuaRocks</a></h3>
-        <h2 class="grhead2"><a href="2-setup_intellij.html">Setup IntelliJ</a></h3>
     </div>
 </div>
 <p class="empty">&nbsp;</p>
