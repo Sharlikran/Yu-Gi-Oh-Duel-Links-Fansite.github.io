@@ -1,5 +1,5 @@
 C:\Python38-32\python.exe wtxt-wiki.py genHtml index.txt
-C:\Python38-32\python.exe wtxt-wiki.py genHtml decks.txt
+C:\Python38-32\python.exe wtxt-wiki.py genHtml 2-decks.txt
 REM C:\Python38-32\python.exe wtxt-wiki.py genHtml 1-install_luarocks.txt
 REM C:\Python38-32\python.exe wtxt-wiki.py genHtml 2-setup_intellij.txt
 REM C:\Python38-32\python.exe wtxt-wiki.py genHtml 3-master_merchant.txt

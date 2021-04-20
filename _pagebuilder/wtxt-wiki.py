@@ -164,7 +164,7 @@ htmlHead = """
 <h1 class="grhead1">Main Table of Contents</h1>
 <div id="tableOfContents" class="grid-toc">
     <div class="toc1">
-        <h2 class="grhead2"><a href="decks.html">Decks</a></h3>
+        <h2 class="grhead2"><a href="2-decks.html">Decks</a></h3>
     </div>
     <div class="toc2">
     </div>
@@ -305,6 +305,7 @@ def wtxtToHtml(srcFile, outFile=None, cssDir=''):
     reImageOnly = re.compile(r'{{image:(.+?)}}')
     reImageCaption = re.compile(r'{{image-caption:(.+?)}}')
     reImageCaptionUrl = re.compile(r'{{image-cap-url:(.+?)}}')
+    reImageThumbnail = re.compile(r'{{image-thumbnail:(.+?)}}')
     # --Exclude from Paragraphs
     # reHtmlBegin = re.compile(r'(^\<font.+?\>)|(^\<code.+?\>)|(^\<a\s{1,3}href.+?\>)|(^\<a\s{1,3}(class=".+?)?href.+?\>)|(^\<img\s{1,3}src.+?\>)|^\u00A9|^\<strong|^\<[bB]\>|(^{% include image)')
     reHtmlNotPar = re.compile(r'\<h\d[>]?|<hr>|{{CONTENTS|class="drkbtn"|<[\/]?div>|<div id=|<div class=|<[\/]?iframe|<[\/]?table|<[\/]?tr|<[\/]?td|<[\/]?thead|<[\/]?tbody|<[\/]?th')
@@ -333,6 +334,12 @@ def wtxtToHtml(srcFile, outFile=None, cssDir=''):
         if '|' in image_line:
             (file_name, alt_text, caption, url, urlname) = [chunk.strip() for chunk in image_line.split('|', 4)]
         return '{{% include image-caption-url.html file="img/{}" alt="{}" caption="{}" url="{}" urlname="{}" %}}'.format(file_name, alt_text, caption, url, urlname)
+
+    def imageThumbnail(maObject):
+        image_line = maObject.group(1).strip()
+        if '|' in image_line:
+            (file_name, alt_text) = [chunk.strip() for chunk in image_line.split('|', 1)]
+        return '{{% include image_thumbnail.html file="img/{}" alt="{}" %}}'.format(file_name, alt_text)
 
     def spoilerTag(line):
         spoilerID = ''
@@ -566,6 +573,7 @@ def wtxtToHtml(srcFile, outFile=None, cssDir=''):
         line = reImageOnly.sub(imageInclude, line)
         line = reImageCaption.sub(imageCaption, line)
         line = reImageCaptionUrl.sub(imageCaptionUrl, line)
+        line = reImageThumbnail.sub(imageThumbnail, line)
         # --Hyperlinks
         line = reLink.sub(linkReplace, line)
         line = reHttp.sub(httpReplace, line)

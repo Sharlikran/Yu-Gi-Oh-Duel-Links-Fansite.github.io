@@ -1,0 +1,35 @@
+{{PAGETITLE="Yu-Gi-Oh! Duel Links Decks"}}
+== Contents
+{{CONTENTS=3}}
+
+== Mission Unlock Arkana: Less then 1000 Life Points
+
+{{image-thumbnail:arcana_lvl30_deck.jpg | Unlock Arkana Deck}}
+
+* Main Deck
+
+1x Gladiator Beast Laquari
+3x Gladiator Beast Bestiari
+1x Gladiator Beast Sagittarii
+2x Gladiator Beast Lanista
+3x Gladiator Beast Dimacari
+1x Gladiator Beast Andal
+3x Seal of the Ancients
+3x Burst Rebirth
+3x Disarm
+
+* Extra Deck
+
+1x Gladiator Beast Gyzarus
+2x Gladiator Beast Nerokius
+2x Gladiator Beast Essedarii
+
+=== Strategy
+
+Special Summon Gyzarus or Essedarii as soon as possible. Be careful whether or not you attack Arkana directly. If you get him to less then 1500 LP avoid doing any additional damage to him. If you summoned Gyzarus use his effect to keep destroying any spell or trap cards. If needed attack with any Lvl 4 Gladiator Beast as long as you are mindful of Arkana's life points so that you can use the effect to summon Gladiator Beast Bestiari to use his special effect to destroy any spell or trap cards. The trick is to get Arkana to 1500 or less LP, leave him helpless and with no spell or trap cards. 
+
+Once you have used 1x Seal of the Ancients to destroy 1x Black Pendant or once you have destroyed 2x or 3x Black Pendants using the special effects of Gyzarus or Bestiari allow Arkana to have a monster on his side of the field. Place any Lvl 4 Gladiator Beast in defense position. Once Arkana attacks it use Burst Rebirth. At that moment you should be at 500 LP. Finish Arkana to win the duel.
+
+You can vary strategy slightly as long as you have 1000 or 500 LP when you use Burst Rebirth.
+
+{{note: When using Seal of the Ancients to destroy Black Pendant you will loose 500 LP. Make sure you have more than 1500 LP remaining.}}
