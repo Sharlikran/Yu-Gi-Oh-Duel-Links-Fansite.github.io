@@ -45,6 +45,6 @@ Special Summon Gyzarus or Essedarii as soon as possible. Be careful whether or n
 
 Once you have used 1x Seal of the Ancients to destroy 1x Black Pendant or once you have destroyed 2x or 3x Black Pendants using the special effects of Gyzarus or Bestiari allow Arkana to have a monster on his side of the field. Place any Lvl 4 Gladiator Beast in defense position. Once Arkana attacks it use Burst Rebirth. At that moment you should be between 1000 and 500 LP. Finish Arkana to win the duel.
 
-You can vary strategy slightly as long as you have between 1000 and 500 LP when you use Burst Rebirth.
+You will have to vary the strategy slightly because of the AI and what cards Arkana has in his hand. Simply make sure you have enough LP to use Seal of the Ancients or Burst Rebirth.
 
 {{note: When using Seal of the Ancients to destroy Black Pendant you will loose 500 LP.}}
