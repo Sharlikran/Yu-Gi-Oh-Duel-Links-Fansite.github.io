@@ -233,6 +233,9 @@ body {
   color: var(--cayman-header-heading);
   background-color: var(--cayman-header-heading);
   background-color: rgb(0, 0, 0);
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
   background-image: linear-gradient(180deg, rgb(1, 12, 20), rgb(3, 37, 61), rgb(5, 62, 101), rgb(7, 86, 142), rgb(9, 111, 182));
   div.gridhead1 {
     width: 280px;
@@ -318,7 +321,12 @@ body {
   }
 }
 
-.grid-header > div {
+.grid-header>div,
+.grid-header>a:link,
+.grid-header>a:visited,
+.grid-header>a:hover,
+.grid-header>a:active {
+  text-decoration: none;
   padding: 0px;
   margin: 0px;
   text-align: center;
@@ -340,6 +348,8 @@ div.gridhead1 {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   border: 0.1rem solid rgba(0, 0, 0, 0.5);
   border-radius: 10px 10px 10px 10px;
+  padding: 0px;
+  margin: 0px;
   -webkit-box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.5),
     inset 0 1px rgba(255, 255, 255, 0.3),
@@ -370,7 +380,7 @@ div.gridhead1 {
   }
   .attr {
     margin: 0;
-    padding: 0 0 0.1rem 0.5rem;
+    padding: 0;
     font: normal 400 1.5em/1.5em 'Montserrat', sans-serif;
     background-color: rgba(150, 150, 150, 0.20);
     letter-spacing: 0.04em;
@@ -390,24 +400,19 @@ div.gridhead1 {
 .grid-toc {
   display: grid;
   @include full {
-  grid-template-areas:
-    'lefttoc righttoc';
+    grid-template-areas: 'lefttoc righttoc';
   }
   @include huge {
-  grid-template-areas:
-    'lefttoc righttoc';
+    grid-template-areas: 'lefttoc righttoc';
   }
   @include large {
-  grid-template-areas:
-    'lefttoc righttoc';
+    grid-template-areas: 'lefttoc righttoc';
   }
   @include medium {
-  grid-template-areas:
-    'lefttoc righttoc';
+    grid-template-areas: 'lefttoc righttoc';
   }
   @include small {
-  grid-template-areas:
-    'lefttoc' 'righttoc';
+    grid-template-areas: 'lefttoc' 'righttoc';
   }
 }
 
